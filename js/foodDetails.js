@@ -3,7 +3,7 @@
 
 const loadReview = () => {
         const param = new URLSearchParams(window.location.search).get("foodDetails");
-        fetch(`http://127.0.0.1:8000/stores/${param}/review/`)
+        fetch(`https://khanastore.onrender.com/stores/${param}/review/`)
 
         .then((res) => res.json())
         .then((data) => foodReview(data));
