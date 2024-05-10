@@ -1,0 +1,129 @@
+* {
+        margin: 0;
+        padding: 0;
+
+}
+
+
+
+
+
+#nav {
+        background-color: rgb(237, 228, 228);
+        text-align: center;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 50px;
+}
+
+#nav i {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(2, 18, 32);
+
+}
+
+#nav h3 {
+        font-family: "Permanent Marker", cursive;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 30px;
+}
+
+
+
+
+/* About section css started here */
+
+.aboutSection {
+        background-image: url('images/aboutBackground.jpg');
+        background-repeat: no-repeat;
+        background-position: fixed;
+        padding: 5px 0 80px 0;
+
+}
+
+#aboutContainer {
+        width: 1400px;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+}
+
+
+
+#aboutTitle {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        margin: auto;
+        gap: 5px;
+        margin-bottom: 15px;
+
+}
+
+#arrow{
+        border: 2px solid black;
+        padding: 4px;
+        border-radius: 50%;
+        background-color: rgb(24, 21, 16);
+        color: white;
+}
+
+#arrow:hover{
+      background-color: rgba(24, 21, 16, 0.827);; 
+}
+
+#aboutTitle h3 {
+        font-family: "Jersey 15", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+
+}
+
+#aboutTitle i {
+        font-size: 20px;
+        color: rgb(6, 40, 63);
+}
+
+.aboutDetails {
+        width: 1400px;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        
+}
+
+.pOne {
+        margin-top: 50px;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(173, 108, 68);
+        padding-top: 10px;
+
+}
+
+.pTwo {
+        margin: 20px 0;
+        color: rgb(173, 108, 68);
+        font-size: 25px;
+}
+
+
+.pThree {
+        color: rgb(173, 108, 68);
+        font-size: 25px;
+}
+
+.pFour {
+
+        color: rgb(173, 108, 68);
+        font-size: 25px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+}

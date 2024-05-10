@@ -1,0 +1,132 @@
+* {
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    
+    
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 120px;
+        background-color: #2d3f65;
+    
+    }
+    
+    #logo {
+    
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    
+    
+    #logo span {
+        color: rgb(190, 157, 36);
+    }
+    
+    #nav ul li {
+        list-style: none;
+    }
+    
+    #nav ul li a {
+        display: block;
+        margin: 0px 5px;
+        text-decoration: none;
+        color: #e4edee;
+        margin: 15px 10px 0px 15px;
+        padding: 6px 6px;
+        font-weight: 500;
+    }
+    
+    #nav ul li a:hover {
+        background-color: rgb(53, 48, 48);
+        border: 1px solid gray;
+        border-radius: 20px;
+    
+    }
+    #dropDownUl{
+        margin-top: 20px;
+    }
+    
+    
+    
+    #profileBtn{
+        display: block;
+        margin: 0px 5px;
+        text-decoration: none;
+        color: white;
+        margin: 15px 10px 0px 15px;
+        padding: 3px 6px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    
+    #dropDownItem{
+        text-decoration: none;
+        font-size: 13px;
+        width: 80px;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    
+    .navlist {
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    
+    #userDetails{
+    
+        width: 600px;
+        height: 450px;
+        margin: 50px auto;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px #29477a61;
+        
+    }
+    
+    .userName h1{
+        font-size: 25px;
+        font-weight: 600;
+        font-style: italic;
+        padding: 8px;
+        color: #8d2a49cb;
+      
+    }
+    
+    
+    .userName span{
+        display: block;
+        width: 400px;
+        border-radius: 10px;
+        background-color: rgba(20, 16, 16, 0.427);
+        text-align: center;
+        margin-top: 10px;
+        padding: 5px 0;
+        color: rgb(244, 242, 242);
+        font-style: none;
+        cursor: pointer;
+        transition: 0.5s;
+          
+    }
+    
+    .userName span:hover{
+        background-color: #00000097;
+    
+    }
+    
+    .userNameContainer{
+       
+        align-items: center;
+        gap: 50px;
+    }
+    
+    
+        
