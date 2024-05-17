@@ -300,11 +300,12 @@
     background-color: #0d304f6f;
 }
 
-hr{
+hr {
     color: #67131339;
-    
-    
+
+
 }
+
 /* Food Container */
 #foodContainer {
     width: 1200px;
@@ -417,20 +418,20 @@ hr{
     display: flex;
     justify-content: center;
     gap: 30px;
- 
+
 }
 
 .whyUsContent {
     width: 300px;
     height: 310px;
-   background-color: #894e8e97;
-   align-items: center;
-   border-radius: 10px;
-   overflow: hidden;
-   transition: 0.5s;
+    background-color: #894e8e97;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
-.whyUsContent:hover{
+.whyUsContent:hover {
     transform: translate(10px);
 
 }
@@ -447,7 +448,7 @@ hr{
     margin-top: 15px;
 }
 
-.whyUsContent h2{
+.whyUsContent h2 {
     font-size: 22px;
     letter-spacing: 1px;
     text-align: center;
@@ -455,7 +456,7 @@ hr{
 
 }
 
-.whyUsContent p{
+.whyUsContent p {
     font-size: 15px;
     align-items: center;
     display: flex;
@@ -464,80 +465,109 @@ hr{
 }
 
 
-footer{
-    background-color: rgba(241, 235, 235, 0.239);
+footer {
+    background-color: rgba(145, 130, 130, 0.239);
     padding: 15px;
 }
 
 
-.footerContainer{
+.footerContainer {
     width: 1400px;
     display: flex;
     justify-content: center;
-    margin:  auto;
+    margin: auto;
     gap: 50px;
-    height: 330px;
-   
+    height: 220px;
 }
 
 
-.footerContentOne{
+.footerContentOne {
     margin-top: 10px;
     width: 350px;
-    border: 1px solid gray;
     height: 200px;
+
 }
-.footerContentOne address{
+
+.footerContentOne address {
     font-size: 18px;
     margin-top: 20px;
 }
-.footerContentOne h4{
+
+.footerContentOne h4 {
     text-transform: uppercase;
     font-size: 25px;
     color: black;
+    margin-top: 10px;
+
+}
+
+
+.location {
+    width: 300px;
     margin: auto;
 }
 
+.contact {
+    width: 300px;
+    margin: auto;
 
-.footerContentOne h3{
+}
+
+.icons {
+    width: 300px;
+    margin: auto;
+
+}
+
+.icons i {
+    margin: 8px;
+}
+
+
+.footerContentOne h3 {
     font-size: 18px;
 }
 
-.footerContentOne h3 span{
+.footerContentOne h3 span {
     font-size: 17px;
 }
 
 
-.footerContentTwo{
+.footerContentTwo {
     margin-top: 10px;
     width: 350px;
-    border: 1px solid gray;
     height: 200px;
 }
 
-.footerContentTwo h4{
+.footerContentTwo h4 {
     text-transform: uppercase;
     font-size: 25px;
     color: black;
-    margin: auto;
+    margin-top: 10px;
+
 }
 
-.footerContentTwo h1{
+.footerContentTwo h1 {
     font-size: 18px;
     margin-top: 20px;
 }
 
+.link {
+    width: 300px;
+    margin: auto;
+}
 
-.footerContentThree{
+
+.footerContentThree {
     margin-top: 10px;
     width: 500px;
     height: 200px;
-    border: 1px solid gray;
-    background-color: rgb(90, 78, 78);
-    
+    background-color: rgba(128, 125, 125, 0.587);
+    border-radius: 10px;
+
 }
 
-.footerContentThree h3{
+.footerContentThree h3 {
     text-align: center;
     font-size: 25px;
     margin-top: 5px;
@@ -546,7 +576,7 @@ footer{
 }
 
 
-.input{
+.input {
     width: 300px;
     display: flex;
     justify-content: center;
@@ -554,11 +584,11 @@ footer{
     height: 25px;
     border: none;
     border-radius: 10px;
-   
-    
+
+
 }
 
-#textArea{
+#textArea {
     height: 40px;
 }
 
@@ -568,124 +598,21 @@ footer{
     border-radius: 5px;
     border: 1px solid gray;
     margin: 2px 0 10px 100px;
-    color: whitesmoke;
+    color: rgb(44, 41, 41);
     background-color: #2a4275;
     cursor: pointer;
     transition: 0.5s;
     font-weight: 600;
+    transition: 0.5s;
 }
 
 
 .contactBtn:hover {
-    background-color: #132856eb;
+    background-color: black;
+    color: white;
 }
 
 
 
-/*     
-  
-    .reviewSection {
-        background-color: rgba(250, 235, 215, 0.386);
-        padding-bottom: 30px;
-    }
-    
-    #reviewContainer {
-        width: 1000px;
-        margin: auto;
-        padding: 30px;
-    }
-    
-    
-    
-    .reviewTitle {
-        text-align: center;
-        padding: 15px 0;
-    
-        margin-bottom: 2px;
-    
-    }
-    
-    .reviewTitle h6 {
-        color: gray;
-        font-size: 15px;
-        margin: 8px 0;
-        letter-spacing: 4px;
-    
-    }
-    
-    
-    .reviewTitle h3 {
-        font-size: 30px;
-    }
-    
-    
-    
-    .image {
-        width: 150px;
-    
-    }
-    
-    .image img {
-        width: 100%;
-        border-radius: 50%;
-    }
-    
-    #reviews {
-        display: grid;
-        justify-content: space-between;
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-    
-    }
-    
-    .reviewCard {
-        width: 450px;
-        height: 200px;
-        text-align: center;
-        padding: 10px 10px;
-        background-color: rgb(225, 229, 233);
-        box-shadow: 4px 4px gray;
-        border-radius: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    
-    }
-    
-    .image {
-        width: 100px;
-        height: 150px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin-left: 20px;
-    
-    }
-    
-    .image img {
-        width: 100%;
-        align-items: center;
-        border-radius: 50%;
-        border: 2px solid rgba(161, 49, 49, 0.641);
-    }
-    
-    
-    .details {
-        width: 300px;
-    }
-    
-    .details h3 {
-        font-size: 18px;
-        margin: 5px;
-    }
-    
-    .details span {
-        font-size: 10px;
-    }
-    
-    .details p {
-        font-size: 12px;
-        letter-spacing: 1.5px;
-    } */
+     
+ 

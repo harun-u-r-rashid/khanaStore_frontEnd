@@ -39,7 +39,7 @@
 /* About section css started here */
 
 .aboutSection {
-        background-image: url('images/aboutBackground.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.258), rgba(0, 0, 0, 0.345)), url('../images/aboutBackground.jpg');
         background-repeat: no-repeat;
         background-position: fixed;
         padding: 5px 0 80px 0;

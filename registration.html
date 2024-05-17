@@ -20,37 +20,35 @@
 
   <nav id="nav">
     <div id="logo">
-            <h3><span>Khana</span> Store</h3>
+      <h3><span>Khana</span> Store</h3>
     </div>
     <ul class="navlist">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+      <li><a href="index.html">Home</a></li>
+      <!-- <li><a href="contact.html">Contact</a></li> -->
+      <li><a href="about.html">About</a></li>
 
-            <li><a href="login.html">Login</a></li>
-            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
 
-            <li class="dropDownLi">
-                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                            id="profileBtn" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Profile
-                    </button>
-                    <ul id="dropDownUl" class="dropdown-menu dropdown-menu-dark">
-                            <li>
-                                    <a id="dropDownItem" class="dropdown-item"
-                                            href="viewProfile.html">User Profile</a>
-                            </li>
+      <li class="dropDownLi">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="profileBtn" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Profile
+        </button>
+        <ul id="dropDownUl" class="dropdown-menu dropdown-menu-dark">
+          <li>
+            <a id="dropDownItem" class="dropdown-item" href="viewProfile.html">User Profile</a>
+          </li>
 
-                            <li id="dropDownItem" onclick="handleLogout()">
-                                    <a class="dropdown-item">Logout</a>
-                            </li>
-                    </ul>
+          <li id="dropDownItem" onclick="handleLogout()">
+            <a class="dropdown-item">Logout</a>
+          </li>
+        </ul>
 
-            </li>
+      </li>
 
     </ul>
-</nav>
+  </nav>
 
 
 
@@ -61,6 +59,10 @@
 
 
     <div class="reg-container">
+
+      <div class="col-md-6">
+        <img class="w-100" src="./Images/regImg.jpeg" alt="" />
+      </div>
       <div class="regContent">
         <h1 class="title mt-5">Please Registration</h1>
         <form action="" onsubmit="handleRegistration(event)">
@@ -70,24 +72,24 @@
           <input id="regLastName" type="text" class="input" placeholder="Last Name" autocomplete="on" required />
           <input id="regEmail" type="email" class="input" placeholder="Email" autocomplete="on" required />
           <input id="regPassword" type="password" class="input" placeholder="Password" autocomplete="on" required />
-          <input id="regConfirmPassword" type="password" class="input" placeholder="Confirm password" autocomplete="on" required />
+          <input id="regConfirmPassword" type="password" class="input" placeholder="Confirm password" autocomplete="on"
+            required />
           <p id="login">Have account? <a id="login2" href="login.html">Login</a></p>
           <input type="submit" class="reg-btn" value="Registration" />
         </form>
       </div>
-      <div class="col-md-6">
-        <img class="w-100" src="./Images/login.png" alt="" />
-      </div>
     </div>
+
+
 
   </main>
 
 
 
   <script src="js/auth.js"></script>
-  
 
-  
+
+
   <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
     defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

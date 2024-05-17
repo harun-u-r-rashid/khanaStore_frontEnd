@@ -76,7 +76,7 @@ const loadCartItems = () => {
                 .then((res) => res.json())
                 .then((data) => {
                         const promises = data.map((element) => {
-                                const fetchFoodPromise = fetch(`http://127.0.0.1:8000/stores/food/${element.food}`)
+                                const fetchFoodPromise = fetch(`https://khanastore.onrender.com/stores/food/${element.food}`)
                                         .then((res) => res.json());
 
                                 return fetchFoodPromise

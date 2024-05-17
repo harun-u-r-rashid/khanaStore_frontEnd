@@ -80,6 +80,8 @@ const handleLogin = (event) => {
 
 
 
+
+
 const handleLogout = () => {
         const token = localStorage.getItem('token');
         fetch("https://khanastore.onrender.com/logout/", {
@@ -100,6 +102,9 @@ const handleLogout = () => {
                 });
 
 };
+
+
+
 
 
 const handleContact = (event) => {

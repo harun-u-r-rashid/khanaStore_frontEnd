@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/allReview.css">
         <!-- <link rel="stylesheet" href="css/contact.css"> -->
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
@@ -31,7 +32,7 @@
                         </div>
                         <ul class="navlist">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <!-- <li><a href="contact.html">Contact</a></li> -->
                                 <li><a href="about.html">About</a></li>
 
                                 <li><a href="login.html">Login</a></li>
@@ -128,10 +129,14 @@
                 </section>
 
                 <hr>
+
+
                 <section class="reviewSection">
-                        This is review show page
+                      
+                       
                         <div id="reviewContainer">
-                                <div id="reviews" class="food mt-5">
+                                <h3>All reviews</h3>
+                                <div id="allReviews" class="food mt-5">
                                 </div>
                         </div>
                 </section>
@@ -188,11 +193,16 @@
                 <footer>
                         <div class="footerContainer">
                                 <div class="footerContentOne">
-                                        <h4>restaurant</h4>
-                                        <address>X, Rajshahi</address>
+                                        <div class="location">
+                                                <h4>restaurant</h4>
+                                                <address>X, Rajshahi</address>
+                                        </div>
 
-                                        <h3>Phone: <span>+880 1678990746</span></h3>
-                                        <h3>Email: <span>xyz@gmail.com</span></h3>
+
+                                        <div class="contact">
+                                                <h3>Phone: <span>+880 1678990746</span></h3>
+                                                <h3>Email: <span>xyz@gmail.com</span></h3>
+                                        </div>
 
                                         <div class="icons">
                                                 <i class="fa-brands fa-facebook"></i>
@@ -204,18 +214,24 @@
                                 </div>
 
                                 <div class="footerContentTwo">
-                                        <h4>Usefull Links</h4>
+                                        <div class="location">
+                                                <h4>Usefull Links</h4>
 
+                                        </div>
+                                        
+
+                                       <div class="link">
                                         <h1>HOME</h1>
                                         <h1>ABOUT</h1>
                                         <h1>Service</h1>
+                                       </div>
 
                                 </div>
 
 
 
                                 <div class="footerContentThree">
-                                          
+
                                         <h3>SEND YOUR QUERY</h3>
                                         <form action="" onsubmit="handleContact(event)">
                                                 <p id="success"></p>
@@ -227,10 +243,10 @@
                                                         required></textarea>
                                                 <input type="submit" class="contactBtn" value="Submit" />
                                         </form>
-                                
-                                                </div>
-                                        
+
                                 </div>
+
+                        </div>
                         </div>
                 </footer>
 

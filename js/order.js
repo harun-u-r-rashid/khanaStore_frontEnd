@@ -90,9 +90,6 @@ const loadOrdersItems = () => {
                                 <div class="proceedBtn">
                                 <button >proceed to checkout</button>
                                 </div>
-
-                               
-                               
                                 </div>
                                 `
                         });
@@ -102,7 +99,6 @@ const loadOrdersItems = () => {
 loadOrdersItems();
 
 const removeOrder = (elementId) => {
-
 
         // console.log(i = elementId); //Here, element id is the order_id
         fetch(`https://khanastore.onrender.com/orders/delete/${elementId}/`, {

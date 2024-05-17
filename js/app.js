@@ -2,6 +2,8 @@
 
 const loadFood = (search) => {
         document.getElementById("foods").innerHTML = "";
+        // http://127.0.0.1:8000/
+        // https://khanastore.onrender.com/
         fetch(`https://khanastore.onrender.com/stores/food/?search=${search ? search : ""
                 }`)
                 .then((res) => res.json())
@@ -40,28 +42,36 @@ const displayFood = (foods) => {
 
 
 
-// const loadReview = () => {
-//         fetch("http://127.0.0.1:8000/stores/review/")
-//                 .then((res) => res.json())
-//                 .then((data) => displayReview(data));
-// };
+const loadAllReview = () => {
+        fetch("https://khanastore.onrender.com/stores/reviews/")
+                .then((res) => res.json())
+                .then((data) => displayReview(data));
+};
 
-// const displayReview = (reviews) => {
-//         reviews.forEach((review) => {
-//                 const parent = document.getElementById("reviews");
-//                 const div = document.createElement("div");
-//                 div.classList.add("review-card");
-//                 div.innerHTML = `
-//               <img src="./Images/girl.png" alt="" />
-//                   <h4>${review.review}</h4>
+const displayReview = (reviews) => {
+        reviews.forEach((review) => {
+                const parent = document.getElementById("allReviews");
+                const div = document.createElement("div");
+                div.classList.add("allReviewCard");
+                div.innerHTML = `
+
+                <div class="userRating">
+                <h4>${review.user}</h4> 
+                <h6>${review.rating}</h6>
+                </div>
+
+                <div class="details">
+                <p>${review.review}</p>
+                </div>
+
+
                  
-//                   <h6>${review.rating}</h6>
-//               `;
-//                 parent.appendChild(div);
-//         });
-// };
+              `;
+                parent.appendChild(div);
+        });
+};
 
-// loadReview();
+loadAllReview();
 
 
 

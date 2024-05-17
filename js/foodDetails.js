@@ -172,9 +172,14 @@ const displayFoodDetails = (detail) => {
         <h3 class="price">${detail.price} <sub>Tk.</sub> </h3>
         <p class="description">${detail.description}</p>
 
+
+        <div class="orderCartBtn">
         <button class="cartBtn" onclick="addToCart(${detail.id})">Add To Cart</button>
 
         <button class="cartBtn" onclick="orderItem(${detail.id})">Order</button>
+        </div>
+
+       
 
         </div>
         </div>
