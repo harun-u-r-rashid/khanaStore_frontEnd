@@ -93,6 +93,7 @@ const loadCategory = () => {
 };
 
 
+
 const handleSearch = () => {
         const value = document.getElementById("search").value;
         loadFood(value);

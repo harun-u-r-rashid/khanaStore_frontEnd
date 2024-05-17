@@ -42,6 +42,7 @@ const handleRegistration = (event) => {
                         document.getElementById("error").innerText = `
                                 check your email
                                 `;
+                                window.location.href = "emailCheck.html";
                 } else {
                         document.getElementById("error").innerText =
                                 "pass must contain eight characters, at least one letter, one number and one special character:";

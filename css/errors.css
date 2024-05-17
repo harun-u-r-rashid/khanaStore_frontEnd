@@ -1,0 +1,50 @@
+*{
+        margin: 0;
+        padding: 0;
+}
+
+
+
+.iconEmailCheck{
+        width: 600px;
+        margin: 100px auto;
+        background-color: rgba(168, 152, 112, 0.545);
+        border-radius: 10px;
+        height: 150px;
+       
+
+}
+
+
+#icon i{
+        font-size: 20px;
+        border: 2px solid gray;
+        border-radius: 50%;
+        padding: 3px;
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+
+}
+
+#icon i:hover{
+        background-color: black;
+        color: white;
+        transform: translate(5px);
+}
+
+
+.emailCheck{
+        width: 500px;
+        margin: 20px auto;
+}
+
+.emailCheck h3{
+        text-align: center;
+        margin: 10px;
+}
+
+.emailCheck p{
+       
+        margin-bottom: 20px;
+}
