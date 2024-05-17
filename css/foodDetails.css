@@ -98,10 +98,113 @@
 
 .reviewShowSection{
         padding: 50px 0;
-        background-color: #f7f2ecd4;
+        background-color: #f7f2ec93;
 }
 
-.reviewShowSection h3{
+
+
+.showAddReview{
+        width: 1600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        margin: auto;
+      border: ;
+}
+
+.addReviewContainer{
+        width: 500px;
+        height: auto;
+        background-color: #4f4b4f1b;
+        border-radius: 5px;
+}
+
+
+
+.addReviewContainer h1{
+        font-size: 20px;
+        color: brown;
+        font-weight: 500;
+        text-align: center;
+        margin: 30px auto;
+        letter-spacing: 1px;
+        font-style: italic;
+        text-transform: uppercase;
+}
+
+
+
+.formcontent{
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.formcontent select{
+        width: 300px;
+        border-radius: 10px;
+        height: 30px;
+        border: none;
+        background-color: white;
+        text-align: center;
+        color: black;
+}
+
+.formContainer{
+       
+        width: 80%;
+        align-items: center;
+        margin: auto;
+
+}
+.formcontent input{
+        width: 300px;
+        border-radius: 10px;
+        height: 30px;
+        border: none;
+        background-color: white;
+        text-align: center;
+        color: black;
+}
+
+
+
+
+.reviewBtn button{
+        border-radius: 10px;
+        width: 70px;
+        padding: 3px 7px;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        font-weight: 500px;
+        margin: 0 0 50px 50px;
+        border: 1px solid gray;
+        transition: 0.5s; 
+}
+
+.reviewBtn button:hover{
+        background-color: black;
+        color: white; 
+        transform: translateY(3px); 
+}
+
+
+.reviewContainer{
+        width: 1000px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: auto;
+        border: 1px solid red;
+        height: auto;
+}
+
+
+.titleReview h3{
         text-align: center;
         font-size: 20px;
         color: rgb(72, 40, 40);
@@ -110,7 +213,7 @@
         font-style: italic;
 }
 
-.reviewShowSection h2{
+.titleReview h2{
         text-align: center;
         font-size:15px;
         color: rgba(34, 13, 13, 0.815);
@@ -120,19 +223,9 @@
         
 }
 
-
-.reviewContainer{
-        width: 1200px;
-        display: grid;
-        justify-content: space-between;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        margin: auto;
-}
-
 .reviewCard{
-        width: 310px;
-        height: 160px;
+        width: 350px;
+        height: 130px;
         background-color: #e0dcd883;
         align-items: center;
         border-radius: 10px 5px 10px 5px;

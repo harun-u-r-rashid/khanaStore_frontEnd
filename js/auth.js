@@ -85,7 +85,6 @@ const handleLogout = () => {
         fetch("https://khanastore.onrender.com/logout/", {
                 method: "POST",
                 headers: {
-
                         Authorization: `Token ${token}`,
                         "Content-Type": "application/json",
                 },
@@ -97,7 +96,6 @@ const handleLogout = () => {
                         localStorage.removeItem("token");
                         console.log("Done");
                         localStorage.removeItem("user_id");
-
                         window.location.href = "index.html";
                 });
 

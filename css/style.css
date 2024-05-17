@@ -1,401 +1,587 @@
 * {
-        margin: 0;
-        padding: 0;
-    
-    }
-    
-    
-    
-    #nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px 120px;
-        background-color: #2d3f65;
-    
-    }
-    
-    #logo {
-    
-        font-size: 15px;
-        font-weight: 700;
-        color: white;
-        letter-spacing: 1px;
-        font-weight: 600;
-    }
-    
-    
-    #logo span {
-        color: rgb(190, 157, 36);
-    }
-    
-    #nav ul li {
-        list-style: none;
-    }
-    
-    #nav ul li a {
-        display: block;
-        margin: 0px 5px;
-        text-decoration: none;
-        color: #e4edee;
-        margin: 15px 10px 0px 15px;
-        padding: 6px 6px;
-        font-weight: 500;
-    }
-    
-    #nav ul li a:hover {
-        background-color: rgb(53, 48, 48);
-        border: 1px solid gray;
-        border-radius: 20px;
-    
-    }
-    
-    #dropDownUl {
-        margin-top: 20px;
-    }
-    
-    
-    
-    #profileBtn {
-        display: block;
-        margin: 0px 5px;
-        text-decoration: none;
-        color: white;
-        margin: 15px 10px 0px 15px;
-        padding: 3px 6px;
-        font-weight: 600;
-        cursor: pointer;
-    }
-    
-    #dropDownItem {
-        text-decoration: none;
-        font-size: 13px;
-        width: 80px;
-        text-align: center;
-        padding: 5px;
-    }
-    
-    
-    .navlist {
-        display: flex;
-        align-items: center;
-    
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    #dropdown-menu {
-        opacity: 0;
-        /* Dropdown visible hobena, opacity er bolode visibility, display use kora jabe but display etu powerfull ekhane onno kono property kaaj korbena*/
-        visibility: hidden;
-        /* display: none; */
-    
-        background-color: antiquewhite;
-        text-align: center;
-        margin-top: 17px;
-        width: 100px;
-        position: absolute;
-        transition: .5s;
-        box-shadow: 5px 5px 4px rgb(103, 126, 141);
-        transform: scaleY(0);
-        transform-origin: top center;
-    }
-    
-    
-    #dropdown-menu>li {
-        list-style: none;
-        padding: 10px 0px;
-        border-bottom: 1px solid white;
-    
-    }
-    
-    #dropdown-menu>li:hover {
-        background-color: red;
-    
-    }
-    
-    
-    #dropdown-menu>li:first-child {
-    
-    
-        list-style: none;
-        border-top: 1px solid white;
-    }
-    
-    
-    
-    
-    #dropdown-menu>li>a {
-        text-decoration: none;
-        color: rgb(30, 23, 23);
-    
-    
-    }
-    
-    #navigation>ul>li:hover>ul {
-        opacity: 1;
-        /* Dropdown visible hobe home nav er upor click korle */
-        visibility: visible;
-        /* display: block; */
-        transform: scaleY(1);
-    
-    
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    .bannerContainer {
-        width: 1400px;
-        margin: auto;
-        margin-top: 40px;
-        padding: 30px;
-    }
-    
-    
-    .bannerContainer h3 {
-        font-size: 30px;
-        font-style: italic;
-        text-align: center;
-        color: #2b1e1e;
-        align-items: center;
-        margin: 12px 400px;
-        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.431);
-    
-    }
-    
-    .banner {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.145), rgba(0, 0, 0, 0.697)), url('images/resCover.jpg');
-        height: 450px;
-        display: flex;
-        text-align: center;
-    
-        border-radius: 10px;
-    }
-    
-    .bannerCard h1 {
-        font-size: 35px;
-        margin: 130px 400px 0 400px;
-        color: antiquewhite;
-        padding: 10px 0;
-        background-color: #11111149;
-    }
-    
-    .bannerCard span {
-        color: rgb(227, 133, 11);
-        font-weight: bold;
-        font-style: oblique;
-    }
-    
-    .bannerCard #p {
-        color: white;
-        font-size: 20px;
-        margin: 40px 200px 0 200px;
-        padding: 10px;
-        border-bottom: 3px dashed gray;
-        border-top: 3px dashed gray;
-    }
-    
-    
-    .bn-img {
-        width: 400px;
-        margin: auto 30px;
-        border-radius: 40px;
-    }
-    
-    
-    
-    /* Category Container */
-    
-    
-    .categoryContainer {
-        margin-top: 20px;
-    }
-    
-    .dropdown {
-        margin: 50px;
-        text-align: center;
-    
-    }
-    
-    #drop-category {
-        background-color: #0b4574;
-    
-    
-    }
-    
-    
-    .category {
-        text-align: center;
-        color: #e2d8d8;
-        padding: 3px;
-        background-color: rgb(152, 112, 112);
-        border-radius: 8px;
-    
-    }
-    
-    .dropdown button {
-        border: 1px solid gray;
-        border-radius: 10px;
-        padding: 5px 10px;
-        background-color: #144497;
-        color: white;
-        transition: 0.5s;
-    
-    }
-    
-    .dropdown button:hover {
-        background-color: #254073e1;
-    
-    }
-    
-    
-    /* Search Bar CSS */
-    
-    
-    
-    #searchContent {
-        margin: 50px;
-        text-align: center;
-    
-    }
-    
-    
-    #searchContent input {
-        width: 400px;
-        height: 40px;
-        border-radius: 10px;
-        font-size: 19px;
-        border: 1px solid rgba(128, 128, 128, 0.797);
-    }
-    
-    #searchContent #button {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin-left: -2px;
-        padding: 5px;
-        font-size: 19px;
-        border: 1px solid rgba(141, 149, 158, 0.797);
-        background-color: rgba(17, 81, 138, 0.949);
-        color: white;
-        transition: 0.5s;
-    
-    }
-    
-    #searchContent #button:hover {
-        background-color: rgba(13, 48, 79, 0.435);
-    }
-    
-    
-    /* Food Container */
-    #foodContainer {
-        width: 1000px;
-        margin: auto;
-    }
-    
-    #foods {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: space-evenly;
-        grid-gap: 50px;
-    
-    }
-    
-    
-    .foodCard {
-        width: 300px;
-        height: 460px;
-        box-shadow: 10px 10px rgba(128, 128, 128, 0.146);
-        transition: 0.5s;
-    }
-    
-    
-    .foodCard:hover {
-        box-shadow: 10px 10px #8080804b;
-    }
-    
-    
-    .foodCard img {
-        width: 280px;
-        height: 220px;
-        margin: 10px 0 0 0;
-        border-radius: 5px;
-    
-    
-    }
-    
-    .foodDetails {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    
-    .foodCard h6 {
-        font-size: 18px;
-        margin: 20px 20px 0 20px;
-        font-weight: bold;
-    
-    }
-    
-    
-    
-    
-    
-    
-    .foodDescription {
-        font-size: 15px;
-        margin: 10px 20px 20px 20px;
-        letter-spacing: .8px;
-        font-weight: 600;
-        border-top: 2px dotted #5604389e;
-        border-bottom: 2px dotted #5604389e;
-    }
-    
-    .detailsBtn {
-        text-decoration: none;
-        border: none;
-        padding: 5px 8px;
-        color: black;
-        border: 2px solid black;
-        border-radius: 4px;
-        margin-bottom: 10px;
-        cursor: pointer;
-        transition: .5s;
-    }
-    
-    .detailsBtn:hover {
-        color: white;
-        background-color: black;
-        text-decoration: none;
-    }
-    
-    
-    #search {
-        padding: 10px;
-        width: 60%;
-    
-    }
-    
-    
-    .nodata {
-        display: none;
-    }
-    
-    
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 190px;
+    background-color: #2d3f65;
+
+}
+
+#logo {
+
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+#logo span {
+    color: rgb(190, 157, 36);
+}
+
+#nav ul li {
+    list-style: none;
+}
+
+#nav ul li a {
+    display: block;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #e4edee;
+    margin: 15px 10px 0px 15px;
+    padding: 6px 6px;
+    font-weight: 500;
+}
+
+#nav ul li a:hover {
+    background-color: rgb(53, 48, 48);
+    border: 1px solid gray;
+    border-radius: 20px;
+
+}
+
+#dropDownUl {
+    margin-top: 20px;
+}
+
+
+
+#profileBtn {
+    display: block;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: white;
+    margin: 15px 10px 0px 15px;
+    padding: 3px 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#dropDownItem {
+    text-decoration: none;
+    font-size: 13px;
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.navlist {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#dropdown-menu {
+    opacity: 0;
+    /* Dropdown visible hobena, opacity er bolode visibility, display use kora jabe but display etu powerfull ekhane onno kono property kaaj korbena*/
+    visibility: hidden;
+    /* display: none; */
+
+    background-color: antiquewhite;
+    text-align: center;
+    margin-top: 17px;
+    width: 100px;
+    position: absolute;
+    transition: .5s;
+    box-shadow: 5px 5px 4px rgb(103, 126, 141);
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+
+#dropdown-menu>li {
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid white;
+
+}
+
+#dropdown-menu>li:hover {
+    background-color: red;
+
+}
+
+
+#dropdown-menu>li:first-child {
+
+
+    list-style: none;
+    border-top: 1px solid white;
+}
+
+
+
+
+#dropdown-menu>li>a {
+    text-decoration: none;
+    color: rgb(30, 23, 23);
+
+
+}
+
+#navigation>ul>li:hover>ul {
+    opacity: 1;
+    /* Dropdown visible hobe home nav er upor click korle */
+    visibility: visible;
+    /* display: block; */
+    transform: scaleY(1);
+
+
+}
+
+
+
+
+
+
+
+
+.bannerContainer {
+    width: 1400px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+
+.bannerContainer h3 {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: #2b1e1e;
+    align-items: center;
+    margin: 12px 400px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.431);
+
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.145), rgba(0, 0, 0, 0.697)), url('../images/hero.png');
+    height: 450px;
+    display: flex;
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.bannerCard h1 {
+    font-size: 35px;
+    margin: 130px 400px 0 400px;
+    color: antiquewhite;
+    padding: 10px 0;
+    background-color: #11111149;
+}
+
+.bannerCard span {
+    color: rgb(227, 133, 11);
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.bannerCard #p {
+    color: white;
+    font-size: 20px;
+    margin: 40px 200px 0 200px;
+    padding: 10px;
+    border-bottom: 3px dashed gray;
+    border-top: 3px dashed gray;
+}
+
+
+.bn-img {
+    width: 400px;
+    margin: auto 30px;
+    border-radius: 40px;
+}
+
+
+
+/* Category Container */
+
+
+.categoryContainer {
+    margin-top: 20px;
+}
+
+.dropdown {
+    margin: 50px;
+    text-align: center;
+
+}
+
+#drop-category {
+    background-color: #0b4574;
+
+
+}
+
+
+.category {
+    text-align: center;
+    color: #e2d8d8;
+    padding: 3px;
+    background-color: rgb(152, 112, 112);
+    border-radius: 8px;
+
+}
+
+.dropdown button {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #144497;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.dropdown button:hover {
+    background-color: #254073e1;
+
+}
+
+
+/* Search Bar CSS */
+
+
+
+#searchContent {
+    margin: 50px;
+    text-align: center;
+
+}
+
+
+#searchContent input {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 19px;
+    border: 1px solid rgba(128, 128, 128, 0.797);
+}
+
+#searchContent #button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -2px;
+    padding: 5px;
+    font-size: 19px;
+    border: 1px solid rgba(141, 149, 158, 0.797);
+    background-color: rgba(17, 81, 138, 0.949);
+    color: white;
+    transition: 0.5s;
+
+}
+
+#searchContent #button:hover {
+    background-color: #0d304f6f;
+}
+
+hr{
+    color: #67131339;
+    
+    
+}
+/* Food Container */
+#foodContainer {
+    width: 1200px;
+    margin: auto;
+}
+
+#foods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 50px;
+
+}
+
+
+.foodCard {
+    width: 300px;
+    height: 460px;
+    box-shadow: 10px 10px rgba(128, 128, 128, 0.146);
+    transition: 0.5s;
+}
+
+
+.foodCard:hover {
+    box-shadow: 10px 10px #8080804b;
+}
+
+
+.foodCard img {
+    width: 280px;
+    height: 220px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+
+
+}
+
+.foodDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.foodCard h6 {
+    font-size: 18px;
+    margin: 20px 20px 0 20px;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+.foodDescription {
+    font-size: 15px;
+    margin: 10px 20px 20px 20px;
+    letter-spacing: .8px;
+    font-weight: 600;
+    border-top: 2px dotted #5604389e;
+    border-bottom: 2px dotted #5604389e;
+}
+
+.detailsBtn {
+    text-decoration: none;
+    border: none;
+    padding: 5px 8px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.detailsBtn:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+
+#search {
+    padding: 10px;
+    width: 60%;
+
+}
+
+
+.nodata {
+    display: none;
+}
+
+
+
+
+.whyUsSection h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #4b454b;
+    font-weight: 650;
+
+}
+
+.whyUsContainer {
+    width: 1400px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+ 
+}
+
+.whyUsContent {
+    width: 300px;
+    height: 310px;
+   background-color: #894e8e97;
+   align-items: center;
+   border-radius: 10px;
+   overflow: hidden;
+   transition: 0.5s;
+}
+
+.whyUsContent:hover{
+    transform: translate(10px);
+
+}
+
+.whyUsContent i {
+    font-size: 40px;
+    color: #f6f5f3;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.whyUsContent h2{
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 15px auto;
+
+}
+
+.whyUsContent p{
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+
+footer{
+    background-color: rgba(241, 235, 235, 0.239);
+    padding: 15px;
+}
+
+
+.footerContainer{
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    margin:  auto;
+    gap: 50px;
+    height: 330px;
+   
+}
+
+
+.footerContentOne{
+    margin-top: 10px;
+    width: 350px;
+    border: 1px solid gray;
+    height: 200px;
+}
+.footerContentOne address{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.footerContentOne h4{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+    margin: auto;
+}
+
+
+.footerContentOne h3{
+    font-size: 18px;
+}
+
+.footerContentOne h3 span{
+    font-size: 17px;
+}
+
+
+.footerContentTwo{
+    margin-top: 10px;
+    width: 350px;
+    border: 1px solid gray;
+    height: 200px;
+}
+
+.footerContentTwo h4{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+    margin: auto;
+}
+
+.footerContentTwo h1{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+.footerContentThree{
+    margin-top: 10px;
+    width: 500px;
+    height: 200px;
+    border: 1px solid gray;
+    background-color: rgb(90, 78, 78);
+    
+}
+
+.footerContentThree h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+    font-style: italic;
+
+}
+
+
+.input{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+   
+    
+}
+
+#textArea{
+    height: 40px;
+}
+
+.contactBtn {
+    width: 65px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 2px 0 10px 100px;
+    color: whitesmoke;
+    background-color: #2a4275;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+
+.contactBtn:hover {
+    background-color: #132856eb;
+}
+
+
+
 /*     
   
     .reviewSection {

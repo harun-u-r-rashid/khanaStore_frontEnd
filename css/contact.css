@@ -85,20 +85,8 @@
 
 
 
-.contactSection {
-        margin-top: 100px;
 
-}
 
-.contactContainer {
-        width: 1200px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 5px 5px 5px 5px rgba(139, 147, 157, 0.376);
-        border: 1px solid gray;
-}
 
 
 .formContainer {
@@ -119,7 +107,7 @@
         display: flex;
         justify-content: center;
         margin: auto;
-        margin: 30px auto;
+        margin: 10px auto;
         padding: 10px;
         border-radius: 5px;
         border: 1px solid gray;

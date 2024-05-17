@@ -1,82 +1,14 @@
-// const loadCartItems = () => {
-//         const user_id = localStorage.getItem("user_id");
-//         let totalCost = 0;
-
-//         fetch(`https://khanastore.onrender.com/carts/?user_id=${user_id}`)
-//                 .then((res) => res.json())
-//                 .then((data) => {
-//                         const promises = data.map((element) => {
-//                                 const fetchFoodPromise = fetch(`https://khanastore.onrender.com/stores/food/${element.food}`)
-//                                         .then((res) => res.json());
-
-//                                 return fetchFoodPromise
-//                                         .then((food_data) => {
-//                                                 const itemCost = element.quantity * food_data.price;
-//                                                 totalCost += itemCost;
-
-
-//                                                 const parent = document.getElementById("tBody");
-//                                                 const tr = document.createElement("tr");
-//                                                 tr.className = "singleTr";
-//                                                 tr.innerHTML = `
-//                             <tr
-//                                     class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-//                                     <td class="tdImage" class="p-4">
-//                                             <img src="${food_data.food_image}"
-//                                                     class="w-16 md:w-32 max-w-full max-h-full"
-//                                                     alt="Apple Watch">
-//                                     </td>
-//                                     <td
-//                                             class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-//                                             ${food_data.food_name}
-//                                     </td>
-
-//                                     <td
-//                                             class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-//                                             ${element.quantity}
-//                                     </td>
-
-//                                     <td
-//                                             class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-//                                             ${food_data.price} <sub>Tk.</sub>
-//                                     </td>
-//                                     <td class="px-6 py-4">
-//                                             <button onclick="removeItem(${food_data.id})" href="#"
-//                                                     class="font-medium text-red-600 dark:text-red-500 hover:underline">Remove</button>
-//                                     </td>
-//                             </tr>
-//             `;
-//                                                 parent.appendChild(tr);
-
-
-//                                         });
-//                         });
-
-//                         return Promise.all(promises).then(() => {
-//                                 const element = document.getElementById("totalCost");
-//                                 element.innerHTML = `
-//                                <h3 class="cost">Total cost: ${totalCost} <sub>Tk.</sub> </h3>
-//                                `
-
-//                         });
-//                 });
-// };
-// loadCartItems();
-
-
-
-
-const loadCartItems = () => {
+const loadOrdersItems = () => {
         const user_id = localStorage.getItem("user_id");
         let totalCost = 0;
         let totalTax = 0;
         let totalItemCost = 0;
 
-        fetch(`https://khanastore.onrender.com/carts/?user_id=${user_id}`)
+        fetch(`https://khanastore.onrender.com/orders/?user_id=${user_id}`)
                 .then((res) => res.json())
                 .then((data) => {
                         const promises = data.map((element) => {
-                                const fetchFoodPromise = fetch(`http://127.0.0.1:8000/stores/food/${element.food}`)
+                                const fetchFoodPromise = fetch(`https://khanastore.onrender.com/stores/food/${element.food}`)
                                         .then((res) => res.json());
 
                                 return fetchFoodPromise
@@ -116,7 +48,7 @@ const loadCartItems = () => {
                                             ${food_data.price} <sub>Tk.</sub>
                                     </td>
                                     <td class="px-6 py-4">
-                                            <button onclick="removeItem(${element.id})" href="#"
+                                            <button onclick="removeOrder(${element.id})" href="#"
                                                     class="font-medium text-red-600 dark:text-red-500 hover:underline">Remove</button>
                                     </td>
                             </tr>
@@ -131,7 +63,7 @@ const loadCartItems = () => {
                                 const element = document.getElementById("totalCost");
                                 element.innerHTML = `
 
-                                <h1>Carts total</h1>
+                                <h1>Orders total</h1>
                                 <hr>
                                 <div class="allCost">
                                 
@@ -167,17 +99,13 @@ const loadCartItems = () => {
                 });
 };
 
-loadCartItems();
+loadOrdersItems();
+
+const removeOrder = (elementId) => {
 
 
-
-
-
-const removeItem = (elementId) => {
-
-
-        // console.log(i = elementId); //Here, element id is the cart_id
-        fetch(`https://khanastore.onrender.com/carts/delete/${elementId}/`, {
+        // console.log(i = elementId); //Here, element id is the order_id
+        fetch(`https://khanastore.onrender.com/orders/delete/${elementId}/`, {
                 method: 'DELETE'
         })
                 .then(response => {
@@ -185,10 +113,15 @@ const removeItem = (elementId) => {
                         if (response.ok) {
                                 alert("Deleted successfully");
                         } else {
-                                alert("Failed to delete cart item.");
+                                alert("Failed to delete order item.");
                         }
                 })
                 .catch(error => {
                         console.error("Error occurred:", error);
                 });
 };
+
+
+
+
+

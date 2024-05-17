@@ -40,6 +40,31 @@ const displayFood = (foods) => {
 
 
 
+// const loadReview = () => {
+//         fetch("http://127.0.0.1:8000/stores/review/")
+//                 .then((res) => res.json())
+//                 .then((data) => displayReview(data));
+// };
+
+// const displayReview = (reviews) => {
+//         reviews.forEach((review) => {
+//                 const parent = document.getElementById("reviews");
+//                 const div = document.createElement("div");
+//                 div.classList.add("review-card");
+//                 div.innerHTML = `
+//               <img src="./Images/girl.png" alt="" />
+//                   <h4>${review.review}</h4>
+                 
+//                   <h6>${review.rating}</h6>
+//               `;
+//                 parent.appendChild(div);
+//         });
+// };
+
+// loadReview();
+
+
+
 const loadCategory = () => {
 
         fetch('https://khanastore.onrender.com/stores/category/')
@@ -56,8 +81,8 @@ const loadCategory = () => {
                         });
                 });
 };
-    
-    
+
+
 const handleSearch = () => {
         const value = document.getElementById("search").value;
         loadFood(value);
